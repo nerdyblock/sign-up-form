@@ -10,19 +10,54 @@
 <body>
     <div class="container">
         <div class="left">
-            <img src="" alt="">
-            <p>photo credit (visaX currently)</p>
+            <div class="logo">
+                <img src="/images/odin-lined.png" alt="odin logo">
+                <p>SIGN-UP FORM</p>
+            </div>
+            
+            <p class="credit">Photo by <a href="https://unsplash.com/@visaxslr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Visax</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  
         </div>
-        <div class="form">
-            <p>This is not a real online Sevice! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, est. Temporibus, tempore. Quasi voluptas expedita perferendis?</p>
+        <div class="right">
+            <div class="intro">
+                <p>This is not a real online Sevice! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, est. Temporibus, tempore. Quasi voluptas expedita perferendis?</p>
+            </div>
+            
             <div class="form-container">
                 <p>Let's do this!</p>
-                <form action="">
-
+                <form action="" id="signup-form">
+                    <div class="form-element">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input pattern="[0-9]{10}" maxlength="10" type="tel" name="phone-number" id="phone-number" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                    
                 </form>
             </div>
-            <button>Create Account</button>
-            <p>Already hav an account? <a href="">Log in</a></p>  
+
+            <div class="sign-up">
+                <button type="submit" form="signup-form">Create Account</button>
+                <p>Already hav an account? <a href="">Log in</a></p>  
+            </div>
         </div>
     </div>
 </body>
