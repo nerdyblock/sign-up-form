@@ -1,3 +1,7 @@
+html {
+    font-family: sans-serif;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -8,18 +12,128 @@ body {
 }
 
 .left {
+    display: flex;
+    flex-direction: column;
     background-image: url(/images/visax-unsplash.jpg);
     background-size: cover;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 60vw;
+    flex-basis: 85%;
     color: white;
 }
 
-.form {
+.logo {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo p{
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #a7a8aa;
+}
+
+.credit a {
+    color: #a7a8aa;
+    text-decoration: none;
+}
+
+.right {
     display: flex;
     flex-direction: column;
+    background-color: rgb(225, 226, 245);
     justify-content: center;
     gap: 20px;
-    padding-left: 40px;
-    padding-right: 80px;
+}
+
+.form-container p{
+    padding-left: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #303236;
+}
+
+.intro, 
+.form-container,
+.sign-up {
+    padding: 20px 80px 20px 40px;
+}
+
+.intro p{
+    font-size: 1.3rem;
+    font-weight: 554;
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .20);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10%;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 10px;
+}
+
+label {
+    color: #303236;
+    font-size: 0.8rem;
+}
+
+.form-element input[type="text"],
+.form-element input[type="tel"],
+.form-element input[type="email"],
+.form-element input[type="password"] {
+    border: 1px solid #c9ccce;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.form-element input[type="text"]:focus,
+.form-element input[type="tel"]:focus,
+.form-element input[type="email"]:focus,
+.form-element input[type="password"]:focus {
+    outline: 1px solid #4898e2;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .20);
+} 
+
+button {
+    width: 190px;
+    font-weight: 500;
+    font-size: 1rem;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1417aa;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+button:hover {
+    background-color: #0b0c64;
 }
