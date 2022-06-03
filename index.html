@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Signup form</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -20,35 +21,41 @@
         </div>
         <div class="right">
             <div class="intro">
-                <p>This is not a real online Sevice! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, est. Temporibus, tempore. Quasi voluptas expedita perferendis?</p>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
             </div>
             
             <div class="form-container">
                 <p>Let's do this!</p>
-                <form action="" id="signup-form">
+                <form action="" id="signup-form" name="signup-form">
                     <div class="form-element">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name" required>
+                        <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                        <div class="error" id="fn-error"></div>
                     </div>
                     <div class="form-element">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name" required>
+                        <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                        <div class="error" id="ln-error"></div>
                     </div>
                     <div class="form-element">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" placeholder="you@domain.com" required>
+                        <div class="error" id="email-error"></div>
                     </div>
                     <div class="form-element">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input pattern="[0-9]{10}" maxlength="10" type="tel" name="phone-number" id="phone-number" required>
+                        <input pattern="[0-9]{10}" maxlength="10" type="tel" name="phone-number" id="phone-number" placeholder="8846934572" required>
+                        <div class="error" id="ph-error"></div>
                     </div>
                     <div class="form-element">
                         <label for="password">PASSWORD</label>
                         <input type="password" name="password" id="password" required>
+                        <div class="error" id="pw-error"></div>
                     </div>
                     <div class="form-element">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
                         <input type="password" name="confirm-password" id="confirm-password" required>
+                        <div class="error" id="cpw-error"></div>
                     </div>
                     
                 </form>
