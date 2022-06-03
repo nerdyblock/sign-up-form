@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Signup form</title>
-    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="left">
             <div class="logo">
-                <img src="/images/odin-lined.png" alt="odin logo">
+                <img src="./images/odin-lined.png" alt="odin logo">
                 <p>SIGN-UP FORM</p>
             </div>
             
@@ -26,10 +25,11 @@
             
             <div class="form-container">
                 <p>Let's do this!</p>
-                <form action="" id="signup-form" name="signup-form">
+                <form  id="signup-form" method="post" name="signup-form" novalidate>
                     <div class="form-element">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                        <input type="text" name="first-name" id="first-name" placeholder="John" 
+                        data-required-msg="First name is required" required>
                         <div class="error" id="fn-error"></div>
                     </div>
                     <div class="form-element">
@@ -39,7 +39,7 @@
                     </div>
                     <div class="form-element">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" placeholder="you@domain.com" required>
+                        <input type="email" name="email" id="email" placeholder="you@domain.com" required email>
                         <div class="error" id="email-error"></div>
                     </div>
                     <div class="form-element">
@@ -67,5 +67,6 @@
             </div>
         </div>
     </div>
+    <script src="./script.js" defer></script>
 </body>
 </html>
