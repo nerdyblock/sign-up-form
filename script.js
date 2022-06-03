@@ -12,12 +12,4 @@ const phoneNumberError = document.getElementById('ph-error');
 const passwordError = document.getElementById('pw-error');
 const confirmPasswordError = document.getElementById('cpw-error');
 
-firstName.addEventListener('invalid', function (event) {
-    if (event.target.validity.valueMissing) {
-      event.target.setCustomValidity('Please tell us how we should address you.');
-    }
-  })
-  
-  input.addEventListener('change', function (event) {
-    event.target.setCustomValidity('');
-  })
+
