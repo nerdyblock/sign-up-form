@@ -64,22 +64,23 @@ body {
     gap: 20px;
 }
 
+.intro, 
+.form-container,
+.sign-up {
+    padding: 20px 90px 20px 40px;
+}
+
+.intro p{
+    font-size: 1.4rem;
+    font-weight: 554;
+}
+
 .form-container p{
     padding-left: 10px;
     font-size: 1.4rem;
     font-weight: 600;
+    margin-bottom: 15px;
     color: #303236;
-}
-
-.intro, 
-.form-container,
-.sign-up {
-    padding: 20px 80px 20px 40px;
-}
-
-.intro p{
-    font-size: 1.3rem;
-    font-weight: 554;
 }
 
 .form-container {
@@ -121,6 +122,11 @@ label {
     outline: 1px solid #4898e2;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .20);
 } 
+
+.error {
+    color: red;
+    font-size: .8rem;
+}
 
 button {
     width: 190px;
