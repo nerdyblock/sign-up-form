@@ -29,17 +29,19 @@
                     <div class="form-element">
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" name="first-name" id="first-name" placeholder="John" 
-                        data-required-msg="First name is required" required>
+                        data-required-msg="*Please Enter First Name" required>
                         <div class="error" id="fn-error"></div>
                     </div>
                     <div class="form-element">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                        <input type="text" name="last-name" id="last-name" placeholder="Doe" 
+                        data-required-msg="*Please Enter Last Name" required>
                         <div class="error" id="ln-error"></div>
                     </div>
                     <div class="form-element">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" placeholder="you@domain.com" required email>
+                        <input type="email" name="email" id="email" placeholder="you@domain.com" 
+                        data-required-msg="*Please Enter Email" required email>
                         <div class="error" id="email-error"></div>
                     </div>
                     <div class="form-element">
@@ -67,6 +69,6 @@
             </div>
         </div>
     </div>
-    <script src="./script.js" defer></script>
+    <script src="./script.js"></script>
 </body>
 </html>

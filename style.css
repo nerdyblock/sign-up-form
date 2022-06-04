@@ -12,13 +12,13 @@ body {
 }
 
 .left {
-    display: flex;
     flex-direction: column;
     background-image: url(./images/visax-unsplash.jpg);
     background-size: cover;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     flex-basis: 85%;
     color: white;
 }
@@ -75,17 +75,17 @@ body {
     font-weight: 554;
 }
 
+.form-container {
+    background-color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .20);
+}
+
 .form-container p{
     padding-left: 10px;
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 15px;
     color: #303236;
-}
-
-.form-container {
-    background-color: white;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, .20);
 }
 
 form {
@@ -106,22 +106,21 @@ label {
     font-size: 0.8rem;
 }
 
-.form-element input[type="text"],
-.form-element input[type="tel"],
-.form-element input[type="email"],
-.form-element input[type="password"] {
+input {
     border: 1px solid #c9ccce;
     border-radius: 5px;
     height: 25px;
 }
 
-.form-element input[type="text"]:focus,
-.form-element input[type="tel"]:focus,
-.form-element input[type="email"]:focus,
-.form-element input[type="password"]:focus {
+input:invalid:focus {
+    outline: 1px solid rgb(206, 6, 39);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .20);
+  }
+  
+input:focus:valid {
     outline: 1px solid #4898e2;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .20);
-} 
+}
 
 .error {
     color: red;
